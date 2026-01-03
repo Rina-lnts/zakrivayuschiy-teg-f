@@ -20,6 +20,7 @@
   background-size: cover;
   background-attachment: fixed;
   font-family: var(--font-family-primary);
+  font-size: var(--main-text-size);
   font-variation-settings: 'wght' var(--weight-regular), 'wdth' var(--wdth);
 }
 
@@ -37,7 +38,7 @@
 .header {
   background-color: var(--bg-color);
   margin-block-start: 100px;
-  margin-block-end: 98px;
+  margin-block-end: 96px;
   border: 2px solid var(--themes-color);
   font-family: var(--font-family-secondary);
   text-align: center;
@@ -75,6 +76,7 @@
   line-height: 1.2;
   letter-spacing: 0;
   vertical-align: middle;
+  font-size: var(--main-text-size);
 }
 
 .image-wrapper {
@@ -136,7 +138,6 @@
 @supports((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
   .image-logo {
     -webkit-text-stroke: 1px #fff;
-    text-stroke: 1px #fff;
     text-shadow: none;
   }
 }
@@ -147,6 +148,7 @@
 
 .card-content .text-wrapper {
   padding: 25px;
+  font-size: var(--main-text-size); 
 }
 
 button {
@@ -176,7 +178,7 @@ button:not(.card__icon-button) {
   transition: outline 0.3s ease;
 }
 
-.card__icon-button:focus{
+.card__icon-button:focus {
   outline: none;
 }
 
@@ -229,7 +231,7 @@ button:not(.card__icon-button) svg {
 .footer-button {
   min-width: 306px;
   min-height: 84px;
-  gap: 8px;
+  gap: 12px;
   margin: 0 auto;
 }
 
@@ -255,7 +257,6 @@ button:not(.card__icon-button) svg {
   display: flex;
   justify-content: end;
   align-items: center;
-  gap: 8px;
 }
 
 .footer {

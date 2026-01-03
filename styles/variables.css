@@ -30,8 +30,8 @@
 
     /* Шрифты и начертания */
     --wdth: 100;
-    --weight-regular: 410;
-    --weight-bold: 715;
+    --weight-regular: 400;
+    --weight-bold: 785;
 
     --font-family-primary: 'Inter-Variable', sans-serif;
     --font-family-secondary: 'PressStart2P', fantasy;
@@ -41,5 +41,5 @@
     --header-text-size: clamp(14px, 1.5972vw, 23px);
 
     /* Отступы */
-    --padding-header: clamp(7.625rem, 5.5rem + 3.18vw, 8.438rem);
+    --padding-header: clamp(7.625rem, 5.5rem + 3.125vw, 8.125rem);
 }
