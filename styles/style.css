@@ -38,7 +38,7 @@
 .header {
   background-color: var(--bg-color);
   margin-block-start: 100px;
-  margin-block-end: 96px;
+  margin-block-end: 98px;
   border: 2px solid var(--themes-color);
   font-family: var(--font-family-secondary);
   text-align: center;
@@ -133,12 +133,14 @@
   top: 25px;
   z-index: 1;
   opacity: 50%;
+  mix-blend-mode: hard-light;
 }
 
 @supports((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
   .image-logo {
     -webkit-text-stroke: 1px #fff;
     text-shadow: none;
+    mix-blend-mode: hard-light;
   }
 }
 
@@ -148,7 +150,8 @@
 
 .card-content .text-wrapper {
   padding: 25px;
-  font-size: var(--main-text-size);
+  font-size: var(--main-text-size); 
+  font-variation-settings: 'wght' var(--weight-text);
 }
 
 button {
@@ -167,6 +170,7 @@ button:hover {
 button:not(.card__icon-button) {
   position: relative;
   overflow: hidden;
+  padding: 0;
   border: 2px solid var(--themes-color);
   color: var(--themes-color);
 }
@@ -291,10 +295,6 @@ button:not(.card__icon-button) svg {
 
 .dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.75);
-}
-
-body:has(dialog[open]) {
-  overflow: hidden;
 }
 
 .dialog-button {
